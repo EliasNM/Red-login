@@ -9,12 +9,10 @@ import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, si
   messagingSenderId: "613724960848",
   appId: "1:613724960848:web:21e5c612093157da4bf955"
 
-
  };
 
  const app = initializeApp(firebaseConfig);
  const auth = getAuth(app);
-
 
   document.getElementById("reg-btn").addEventListener('click', function(){
    document.getElementById("register-div").style.display="inline";
@@ -50,7 +48,6 @@ document.getElementById("log-btn").addEventListener('click', function(){
   });
 });
 
-
   document.getElementById("register-btn").addEventListener('click', function(){
 
    const registerEmail= document.getElementById("register-email").value;
@@ -71,7 +68,6 @@ document.getElementById("log-btn").addEventListener('click', function(){
 
   });
 });
-
 
 document.getElementById("log-out-btn").addEventListener('click', function(){
   signOut(auth).then(() => {
